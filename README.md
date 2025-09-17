@@ -8,7 +8,7 @@
 
 ## Highlights
 
-- **Hierarchical Bayesian Encoder** with attention-weighted multi-scale feature extraction for comprehensive uncertainty quantification  
+- **Hierarchical Bayesian Architecture** with attention-weighted multi-scale feature extraction for comprehensive uncertainty quantification  
 - **Dual Uncertainty Decomposition** separating epistemic (model uncertainty) and aleatoric (data uncertainty) for interpretable predictions  
 - **Multi-Agent System** with specialized agents for disease classification, consistency validation, and adaptive calibration  
 - **State-of-the-art Performance** achieving *86.1% AUC* on CheXpert with exceptional calibration *(ECE < 0.02)*  
@@ -31,7 +31,7 @@ Our approach addresses the critical need for **reliable uncertainty quantificati
 
 ---
 
-##  Architecture Overview
+## Architecture Overview
 
 Our framework consists of four main components:
 
@@ -81,6 +81,7 @@ conda activate bayesian_med
 # Install dependencies
 pip install -r requirements.txt
 
+---
 ## Training
 # Train the Enhanced Bayesian Framework
 python training/train.py \
@@ -89,6 +90,7 @@ python training/train.py \
     --epochs 300 \
     --batch_size 32
 
+---
 ## Testing
 # Generate comprehensive uncertainty analysis
 python Evaluation\ Metrics/evaluation_metrics_calculator.py \
@@ -96,7 +98,7 @@ python Evaluation\ Metrics/evaluation_metrics_calculator.py \
     --data_path /path/to/validation \
     --mc_samples 1000
 
-
+---
 ## Contact
 For questions or collaborations, please contact: 
 Dawood Rehman – [dawoodrehman1297@gapp.nthu.edu.tw]

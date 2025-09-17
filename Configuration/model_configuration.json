@@ -1,0 +1,18 @@
+# Configuration
+model_config = {
+    "load_backbone_weights": "checkpoints/cxrclip_mc/r50_mc.pt",
+    "freeze_backbone_weights": False,
+    "projection_dim": 512,  
+    "image_encoder": {
+        "name": "resnet",
+        "resnet_type": "resnet50",
+        "pretrained": True,
+        "source": "cxr_clip"
+    },
+    "classifier": {
+        "config": {
+            "name": "linear",
+            "n_class": 14
+        }
+    }
+}

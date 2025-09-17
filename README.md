@@ -1,22 +1,22 @@
 # Bayesian Modelling for Enhanced Uncertainty, Consistency, and Calibration in Multi-Disease Chest X-ray Diagnosis
 
 <p align="center">
-  <img src="Figures/Final_Architecture_Plot_Enhanced_Bayesian_Framework.png" alt="Enhanced Bayesian Framework Architecture" width="1000"/>
+  <img src="figures/Final_Architecture_Plot_Enhanced_Bayesian_Framework.png" alt="Enhanced Bayesian Framework Architecture" width="1000"/>
 </p>
 
 ---
 
-## Highlights
+## 🎯 Highlights
 
 - **Hierarchical Bayesian Architecture** with attention-weighted multi-scale feature extraction for comprehensive uncertainty quantification  
 - **Dual Uncertainty Decomposition** separating epistemic (model uncertainty) and aleatoric (data uncertainty) for interpretable predictions  
 - **Multi-Agent System** with specialized agents for disease classification, consistency validation, and adaptive calibration  
 - **State-of-the-art Performance** achieving *86.1% AUC* on CheXpert with exceptional calibration *(ECE < 0.02)*  
-- **Clinically Interpretable uncertainty estimates** that enable safer deployment in medical decision support systems  
+- **Clinically Interpretable** uncertainty estimates that enable safer deployment in medical decision support systems  
 
 ---
 
-## Abstract
+## 📋 Abstract
 
 This repository contains the implementation of our **Enhanced Bayesian Framework** for uncertainty-aware chest X-ray classification.  
 
@@ -31,7 +31,7 @@ Our approach addresses the critical need for **reliable uncertainty quantificati
 
 ---
 
-## Architecture Overview
+## 🏗️ Architecture Overview
 
 Our framework consists of four main components:
 
@@ -42,33 +42,32 @@ Our framework consists of four main components:
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
+├── configuration/
+│   └── model_configuration.json           # Model configuration
+├── data_preprocessing/
+│   └── data_preprocessing.py              # Data cleaning & preprocessing
+├── evaluation_metrics/
+│   └── evaluation_metrics_calculator.py   # Custom evaluation metrics
+├── figures/                               # Framework & uncertainty visualizations
+├── model/
+│   ├── bayesian_encoder.py                # Hierarchical Bayesian encoder
+│   ├── calibration.py                     # Adaptive calibration
+│   ├── classification_network.py          # Disease classification agent
+│   ├── consistency_validation.py          # Consistency validation agent
+│   ├── enhanced_bayesian_framework.py     # Full model integration
+│   ├── multi_objective_loss.py            # Multi-objective loss
+│   └── variational_linear.py              # Variational linear layers
+├── main.py                                # Entry point for training/testing
+├── requirements.txt                       # Environment dependencies
+└── README.md                              # Project documentation
 
-├── Configuration/
-│   └── model_configuration.json # Model configuration
-├── Data Pre-processing/
-│   └── data_pre-processing.py # Data cleaning & preprocessing
-├── Evaluation Metrics/
-│   └── evaluation_metrics_calculator.py # Custom evaluation metrics
-├── Figures/ # Figures for framework & uncertainty
-├── Model/
-│   ├── bayesianencoder.py # Hierarchical Bayesian encoder
-│   ├── calibration.py # Adaptive calibration
-│   ├── classification_network.py # Disease classification agent
-│   ├── consistency_validation.py # Consistency validation agent
-│   ├── enhanced_bayesian_framework.py # Full model integration
-│   ├── multi-objective_loss.py # Multi-objective loss
-│   └── variationallinear.py # Variational linear layers
-├── main.py # Entry point for training/testing
-├── requirements.yml # Environment dependencies
-└── README.md # Project documentation
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Installation
-
 ```bash
 # Clone repository
 git clone https://github.com/dawoodrehman44/ICASSP-2026.git
@@ -81,24 +80,27 @@ conda activate bayesian_med
 # Install dependencies
 pip install -r requirements.txt
 
----
+
 ## Training
 # Train the Enhanced Bayesian Framework
-python training/train.py \
-    --config configs/training_config.json \
+python main.py \
+    --mode train \
+    --config configuration/model_configuration.json \
     --data_path /path/to/chexpert \
     --epochs 300 \
     --batch_size 32
 
----
+
 ## Testing
 # Generate comprehensive uncertainty analysis
-python Evaluation\ Metrics/evaluation_metrics_calculator.py \
+python evaluation_metrics/evaluation_metrics_calculator.py \
     --checkpoint checkpoints/model_epoch_285.pt \
     --data_path /path/to/validation \
     --mc_samples 1000
 
----
+🤝 Acknowledgments
+We thank the creators of CheXpert, MIMIC-CXR, and CXR-CLIP for making their datasets and models publicly available.
+
 ## Contact
 For questions or collaborations, please contact: 
 Dawood Rehman – [dawoodrehman1297@gapp.nthu.edu.tw]

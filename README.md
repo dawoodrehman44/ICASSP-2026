@@ -1,9 +1,8 @@
 # Bayesian Modelling for Enhanced Uncertainty, Consistency, and Calibration in Multi-Disease Chest X-ray Diagnosis
 
 <p align="center">
-  <img src="figures/Final_Architecture_Plot_Enhanced_Bayesian_Framework.png" alt="Enhanced Bayesian Framework Architecture" width="1000"/>
+  <img src="Figures/Final_Architecture_Plot_Enhanced_Bayesian_Framework.png" alt="Enhanced Bayesian Framework Architecture" width="1000"/>
 </p>
-
 ---
 
 ## 🎯 Highlights

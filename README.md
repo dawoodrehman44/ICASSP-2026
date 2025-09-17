@@ -45,20 +45,20 @@ Our framework consists of four main components:
 ## Repository Structure
 
 ├── Configuration/
-│ └── model_configuration.json # Model configuration
+│   └── model_configuration.json # Model configuration
 ├── Data Pre-processing/
-│ └── data_pre-processing.py # Data cleaning & preprocessing
+│   └── data_pre-processing.py # Data cleaning & preprocessing
 ├── Evaluation Metrics/
-│ └── evaluation_metrics_calculator.py # Custom evaluation metrics
+│   └── evaluation_metrics_calculator.py # Custom evaluation metrics
 ├── Figures/ # Figures for framework & uncertainty
 ├── Model/
-│ ├── bayesianencoder.py # Hierarchical Bayesian encoder
-│ ├── calibration.py # Adaptive calibration
-│ ├── classification_network.py # Disease classification agent
-│ ├── consistency_validation.py # Consistency validation agent
-│ ├── enhanced_bayesian_framework.py # Full model integration
-│ ├── multi-objective_loss.py # Multi-objective loss
-│ └── variationallinear.py # Variational linear layers
+│   ├── bayesianencoder.py # Hierarchical Bayesian encoder
+│   ├── calibration.py # Adaptive calibration
+│   ├── classification_network.py # Disease classification agent
+│   ├── consistency_validation.py # Consistency validation agent
+│   ├── enhanced_bayesian_framework.py # Full model integration
+│   ├── multi-objective_loss.py # Multi-objective loss
+│   └── variationallinear.py # Variational linear layers
 ├── main.py # Entry point for training/testing
 ├── requirements.yml # Environment dependencies
 └── README.md # Project documentation

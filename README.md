@@ -1,14 +1,14 @@
 # Bayesian Modelling for Enhanced Uncertainty, Consistency, and Calibration in Multi-Disease Chest X-ray Diagnosis
 
 <p align="center">
-  <img src="Figures/framework_architecture.png" alt="Enhanced Bayesian Framework Architecture" width="1000"/>
+  <img src="/home/dawood/lab2_rotaion/ICASSP2026 - Enhanced Bayesian Framework/Figures/Final Architecture Plot - Enhanced Bayesian Framework.png" alt="Bayesian Framework Architecture" width="1000"/>
 </p>
 
 ---
 
 ## Highlights
 
-- **Hierarchical Bayesian Architecture** with attention-weighted multi-scale feature extraction for comprehensive uncertainty quantification  
+- **Hierarchical Bayesian Encoder** with attention-weighted multi-scale feature extraction for comprehensive uncertainty quantification  
 - **Dual Uncertainty Decomposition** separating epistemic (model uncertainty) and aleatoric (data uncertainty) for interpretable predictions  
 - **Multi-Agent System** with specialized agents for disease classification, consistency validation, and adaptive calibration  
 - **State-of-the-art Performance** achieving *86.1% AUC* on CheXpert with exceptional calibration *(ECE < 0.02)*  
@@ -62,9 +62,6 @@ Our framework consists of four main components:
 ├── main.py # Entry point for training/testing
 ├── requirements.yml # Environment dependencies
 └── README.md # Project documentation
-
-
----
 
 ---
 

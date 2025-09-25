@@ -93,7 +93,7 @@ python main.py \
 
 
 ## Testing
-# Generate comprehensive uncertainty analysis
+### Generate comprehensive uncertainty analysis
 python evaluation_metrics/evaluation_metrics_calculator.py \
     --checkpoint checkpoints/model_epoch_285.pt \
     --data_path /path/to/validation \

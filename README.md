@@ -99,8 +99,8 @@ python evaluation_metrics/evaluation_metrics_calculator.py \
     --data_path /path/to/validation \
     --mc_samples 1000
 
-🤝 Acknowledgments
-We thank the creators of CheXpert, MIMIC-CXR, and Chest Xray14 datasets and all the models used in this work, making them publicly available.
+## 🤝 Acknowledgments
+We thank the creators of CheXpert, MIMIC-CXR, and Chest Xray14 datasets and all the models used in this work, for making them publicly available to the community.
 
 ## Contact
 For questions or collaborations, please contact: 

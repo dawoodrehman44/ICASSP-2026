@@ -63,7 +63,7 @@ Our framework consists of four main components:
 │   ├── multi_objective_loss.py            # Multi-objective loss
 │   └── variational_linear.py              # Variational linear layers
 ├── main.py                                # Entry point for training/testing
-├── requirements.yml                       # Environment dependencies
+├── requirements.text                      # Environment dependencies
 └── README.md                              # Project documentation
 
 

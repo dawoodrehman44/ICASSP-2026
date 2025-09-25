@@ -104,8 +104,8 @@ python main.py \
 ## Testing
 ### Perform comprehensive uncertainty analysis
 ```bash
-python evaluation_metrics/evaluation_metrics_calculator.py \
-    --checkpoint checkpoints/model_epoch \
+python Experiments/uncertainty_Analysis.py \
+    --Experiments/Comparative_Case_Study_Analysis.py \
     --data_path /path/to/validation \
     --mc_samples 1000
 ```

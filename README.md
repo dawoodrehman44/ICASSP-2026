@@ -53,6 +53,7 @@ Our framework consists of four main components:
 │   ├── Comparative_Case_Study_Analysis.py
 │   └── Uncertainty_Analysis.py
 ├── Figures/
+│   └── Architecture_Plot.png
 ├── Model/
 │   ├── model_integration.py
 │   ├── model_train.py

@@ -100,7 +100,7 @@ python evaluation_metrics/evaluation_metrics_calculator.py \
     --mc_samples 1000
 
 🤝 Acknowledgments
-We thank the creators of CheXpert, MIMIC-CXR, and CXR-CLIP for making their datasets and models publicly available.
+We thank the creators of CheXpert, MIMIC-CXR, and Chest Xray14 datasets and all the models used in this work, making them publicly available.
 
 ## Contact
 For questions or collaborations, please contact: 

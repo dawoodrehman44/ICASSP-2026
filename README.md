@@ -63,7 +63,7 @@ Our framework consists of four main components:
 └── README.md                              # Project documentation
 
 
----
+```
 
 ## 🚀 Quick Start
 
@@ -73,6 +73,7 @@ Our framework consists of four main components:
 git clone https://github.com/dawoodrehman44/ICASSP-2026.git
 cd ICASSP-2026
 
+```
 # Create environment
 conda create -n bayesian_med python=3.8
 conda activate bayesian_med

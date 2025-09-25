@@ -42,6 +42,7 @@ Our framework consists of four main components:
 ---
 
 ## 📁 Repository Structure
+```bash
 ├── configuration/
 │   └── model_configuration.json           # Model configuration
 ├── data_preprocessing/

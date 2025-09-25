@@ -97,7 +97,7 @@ pip install -r requirements.txt
 python main.py \
     --model train \
     --config configuration/model_configuration.json \
-    --data_path /path/to/chexpert \
+    --data_path /path/to/training \
 
 ```
 

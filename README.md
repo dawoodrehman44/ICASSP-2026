@@ -43,14 +43,18 @@ Our framework consists of four main components:
 
 ## 📁 Repository Structure
 ```bash
-├── configuration/
+├── Configuration/
 │   └── model_configuration.json           # Model configuration
-├── data_preprocessing/
+├── Data_Pre-processing/
 │   └── data_preprocessing.py              # Data cleaning & preprocessing
-├── evaluation_metrics/
+├── Evaluation_Metrics/
 │   └── evaluation_metrics_calculator.py   # Custom evaluation metrics
-├── figures/                               # Framework & uncertainty visualizations
-├── model/
+├── Figures/
+├── Model/
+│   ├── model_integration.py
+│   ├── model_train.py
+│   ├── model_valid.py                     # Framework & uncertainty visualizations
+├── Model Components/
 │   ├── bayesian_encoder.py                # Hierarchical Bayesian encoder
 │   ├── calibration.py                     # Adaptive calibration
 │   ├── classification_network.py          # Disease classification agent
@@ -59,7 +63,7 @@ Our framework consists of four main components:
 │   ├── multi_objective_loss.py            # Multi-objective loss
 │   └── variational_linear.py              # Variational linear layers
 ├── main.py                                # Entry point for training/testing
-├── requirements.txt                       # Environment dependencies
+├── requirements.yml                       # Environment dependencies
 └── README.md                              # Project documentation
 
 
@@ -95,7 +99,7 @@ python main.py \
 ```
 
 ## Testing
-### Generate comprehensive uncertainty analysis
+### Perform comprehensive uncertainty analysis
 ```bash
 python evaluation_metrics/evaluation_metrics_calculator.py \
     --checkpoint checkpoints/model_epoch_285.pt \

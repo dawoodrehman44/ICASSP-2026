@@ -74,30 +74,34 @@ git clone https://github.com/dawoodrehman44/ICASSP-2026.git
 cd ICASSP-2026
 
 ```
-# Create environment
+### Create environment
+```bash
 conda create -n bayesian_med python=3.8
 conda activate bayesian_med
 
 # Install dependencies
 pip install -r requirements.txt
-
+```
 
 ## Training
-# Train the Enhanced Bayesian Framework
+### Train the Enhanced Bayesian Framework
+```bash
 python main.py \
     --mode train \
     --config configuration/model_configuration.json \
     --data_path /path/to/chexpert \
     --epochs 300 \
     --batch_size 32
-
+```
 
 ## Testing
 ### Generate comprehensive uncertainty analysis
+```bash
 python evaluation_metrics/evaluation_metrics_calculator.py \
     --checkpoint checkpoints/model_epoch_285.pt \
     --data_path /path/to/validation \
     --mc_samples 1000
+```
 
 ## 🤝 Acknowledgments
 We thank the creators of CheXpert, MIMIC-CXR, and Chest Xray14 datasets and all the models used in this work, for making them publicly available to the community.

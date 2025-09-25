@@ -49,6 +49,9 @@ Our framework consists of four main components:
 │   └── data_preprocessing.py              # Data cleaning & preprocessing
 ├── Evaluation_Metrics/
 │   └── evaluation_metrics_calculator.py   # Custom evaluation metrics
+├── Experiments/
+│   ├── Comparative_Case_Study_Analysis.py
+│   └── Uncertainty_Analysis.py
 ├── Figures/
 ├── Model/
 │   ├── model_integration.py
@@ -91,18 +94,17 @@ pip install -r requirements.txt
 ### Train the Enhanced Bayesian Framework
 ```bash
 python main.py \
-    --mode train \
+    --model train \
     --config configuration/model_configuration.json \
     --data_path /path/to/chexpert \
-    --epochs 300 \
-    --batch_size 32
+
 ```
 
 ## Testing
 ### Perform comprehensive uncertainty analysis
 ```bash
 python evaluation_metrics/evaluation_metrics_calculator.py \
-    --checkpoint checkpoints/model_epoch_285.pt \
+    --checkpoint checkpoints/model_epoch \
     --data_path /path/to/validation \
     --mc_samples 1000
 ```

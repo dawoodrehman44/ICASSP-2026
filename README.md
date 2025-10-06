@@ -10,14 +10,14 @@
 - **Hierarchical Bayesian Architecture** with attention-weighted multi-scale feature extraction for comprehensive uncertainty quantification  
 - **Dual Uncertainty Decomposition** separating epistemic (model uncertainty) and aleatoric (data uncertainty) for interpretable predictions  
 - **Multi-Agent System** with specialized agents for disease classification, consistency validation, and adaptive calibration  
-- **State-of-the-art Performance** achieving *86.1% AUC* on CheXpert with exceptional calibration *(ECE < 0.02)*  
+- **State-of-the-art Performance** achieving *0.861 AUC* on CheXpert with exceptional calibration *(ECE < 0.016)*  
 - **Clinically Interpretable** uncertainty estimates that enable safer deployment in medical decision support systems  
 
 ---
 
 ## 📋 Abstract
 
-This repository contains the implementation of our **Enhanced Bayesian Framework** for uncertainty-aware chest X-ray classification.  
+This repository contains the implementation of our **Bayesian Framework** for uncertainty-aware chest X-ray classification.  
 
 Our approach addresses the critical need for **reliable uncertainty quantification in medical AI** by combining:  
 
